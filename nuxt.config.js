@@ -11,6 +11,7 @@ export default {
         content: '레벨업지지를 이용하는 오거나이즈들을 위한 소개 페이지입니다.',
       },
       {
+        hid: 'title',
         name: 'og:title',
         content: '레벨업지지 오거나이저 페이지입니다',
       },
