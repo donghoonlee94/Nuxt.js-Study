@@ -1,6 +1,11 @@
 <template>
   <div>
-    <Nuxt />
+    <div class="header">
+      <NuxtLink to="/">홈</NuxtLink>
+      <NuxtLink to="/users">/users</NuxtLink>
+      <NuxtLink to="/users/1234">/users/1234</NuxtLink>
+    </div>
+    <Nuxt class="body" />
   </div>
 </template>
 
@@ -15,41 +20,19 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  color: white;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
+.header {
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.body {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100vh;
 }
 </style>

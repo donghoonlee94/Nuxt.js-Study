@@ -1,9 +1,6 @@
 <template>
   <div class="container">
     <h1 class="title">nuxt.js</h1>
-    <NuxtLink to="/">mainIndex</NuxtLink>
-    <NuxtLink to="/users">usersIndex</NuxtLink>
-    <NuxtLink to="/users/1234">1234 user</NuxtLink>
   </div>
 </template>
 
