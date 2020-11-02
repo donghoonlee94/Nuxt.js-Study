@@ -5,7 +5,28 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'og:description',
+        content: '레벨업지지를 이용하는 오거나이즈들을 위한 소개 페이지입니다.',
+      },
+      {
+        name: 'og:title',
+        content: '레벨업지지 오거나이저 페이지입니다',
+      },
+      {
+        name: 'og:keywords',
+        content:
+          '레벨업지지, 이스포츠, 아레나, 아레나, 팀, 리그, 코치, 게임, 게이밍, 게이머, 티어, 렙식, 레인보우식스 시즈, 롤, 리그 오브 레전드, 오버워치, 포아너, 디스코드, 상금, 보상, 대진표, 싱글 엘리미네이션, 더블 엘리미네이션, 라운드 로빈, 한국',
+      },
+      {
+        name: 'og:image',
+        content: 'assets/images/testimg.png',
+      },
+      {
+        name: 'og:author',
+        content: '레벨업지지',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },

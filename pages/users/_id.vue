@@ -4,11 +4,11 @@
 
 <script>
 export default {
-  // validate({ params }) {
-  //   // Must be a number
-  //   console.log(params)
-  //   return /^\d+$/.test(params.id)
-  // },
+  validate({ params }) {
+    // Must be a number
+    console.log(params)
+    return /^\d+$/.test(params.id)
+  },
 }
 </script>
 

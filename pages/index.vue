@@ -1,27 +1,9 @@
 <template>
   <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">nuxt.js</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+    <h1 class="title">nuxt.js</h1>
+    <NuxtLink to="/">mainIndex</NuxtLink>
+    <NuxtLink to="/users">usersIndex</NuxtLink>
+    <NuxtLink to="/users/1234">1234 user</NuxtLink>
   </div>
 </template>
 
