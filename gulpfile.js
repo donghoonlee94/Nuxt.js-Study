@@ -1,10 +1,11 @@
 const gulp = require('gulp')
 const imagemin = require('gulp-imagemin')
-const imagePath = 'assets/images/*'
+const inputImagePath = 'assets/originImages/*'
+const outputImagePath = 'assets/images'
 
 gulp.task('image', function () {
   return gulp
-    .src(imagePath)
+    .src(inputImagePath)
     .pipe(
       imagemin([
         imagemin.mozjpeg({ quality: 75 }),
@@ -14,11 +15,11 @@ gulp.task('image', function () {
         }),
       ])
     )
-    .pipe(gulp.dest('assets/images'))
+    .pipe(gulp.dest(outputImagePath))
 })
 
 gulp.task('watch', function () {
-  gulp.watch(imagePath, gulp.series('image'))
+  gulp.watch(inputImagePath, gulp.series('image'))
 })
 
 gulp.task('default', gulp.parallel('image', 'watch'))
